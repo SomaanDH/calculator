@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <style>
-        .container{
-            display: grid;
-             grid-template-columns: 1fr 1fr 1fr 1fr;
-             gap: 5px;
-             background-color: lightpink;
-        }
-        .container button{
-            background-color: blanchedalmond;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background-color: antiquewhite;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      width: 300px;
+      background: #f4c6d0;
+      padding: 10px;
+      border: 1px solid #e3b5c0;
+      border-radius: 5px;
+    }
+
+    .keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .calculator :hover {
+      background: antiquewhite;
+
+    }
+
+    button {
+      height: 64px;
+      border: 1px solid #e3b5c0;
+      background: #f4d5dd;
+      color: #1d1d1d;
+      font-size: 1.05rem;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 5px;
+      margin: 0;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <button>%</button>
-        <button>CE</button>
-        <button>C</button>
-        <button>&larr;</button>
-        <button>1/x</button>
-        <button>x<sup>2</sup></button>
-        <button><sup>2</sup>√x</button>
-        <button>&divide;</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>&times;</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>+/-</button>
-        <button>0</button>
-        <button>.</button>
-        <button>=</button>
-        
+  <div class="calculator">
+    <div class="keys">
+      <button>%</button>
+      <button>CE</button>
+      <button>C</button>
+      <button>&larr;</button>
+
+      <button>1/x</button>
+      <button>x<sup>2</sup></button>
+      <button>2√x</button>
+      <button>&divide;</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>&times;</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+
+      <button>+/-</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
 </body>
 </html>
